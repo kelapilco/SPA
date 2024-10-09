@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Spa</title>
+</head>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8f737f;
+        }
+        header {
+            background-color: #110f10;
+            color: rgba(206, 29, 206, 0.925);
+            text-align: center;
+            padding: 1em 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+</style>
+<body>
+
+<header>
+    <h1>Bienvenido a la Clínica Spa</h1>
+    <h4>Tu refugio de bienestar y relajación</H4>
+        <p>
+            En la clinica spa, nos dedicamos a proporcionar una experiencia 
+            de relajación y rejuvenecimiento integral.
+             Nuestro objetivo es mejorar tu salud física y mental 
+             a través de tratamientos personalizados 
+             que nutren tu cuerpo y alma.
+
+
+        </p>
+</header>
+
+<nav>
+    <a href="servicios">Servicios</a>
+    <a href="Porque elegirnos">Porque elegirnos</a>
+    <a href="about">Testimonios</a>
+    <a href="Contactos">Contactos</a>
+</nav>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <table>
+        <tr>
+            <th>Servicio</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Masaje Relajante</td>
+            <td>Libérate del estrés y la tensión con nuestros masajes
+                 terapéuticos, diseñados 
+                para relajar tus músculos y restaurar tu energía.</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>Masajes Faciales</td>
+            <td>Tratamiento facial para mantener la piel hidratada y saludable.</td>
+            <td>$40</td>
+        </tr>
+        <tr>
+            <td>Tratamiento de Aroma Terapia</td>
+            <td>Utilizamos aceites esenciales para crear un ambiente de calma y bienestar, 
+                ideal para aliviar la ansiedad y mejorar tu estado de ánimo.</td>
+            <td>$25</td>
+        </tr>
+        <tr>
+            <td>Vaños de Vapor y saina</td>
+            <td>Purifica tu cuerpo y relájate en nuestras instalaciones de vapor,
+                 perfectas para revitalizar tu piel y liberar toxinas.</td>
+            <td>$30</td>
+        </tr>
+        <tr>
+            <td>Paquete de bienestar</td>
+            <td>Combinaciones de nuestros servicios para ofrecerte
+                 una experiencia completa de relajación y cuidado personal.</td>
+            <td>$80</td>
+        </tr>
+    </table>
+    <section id="about">
+        <img src="IMG/216538227-el-ambiente-sereno-del-cliente-del-salón-de-spa-se-complace-en-rejuvenecer-con-un-lujoso-masaje-con.jpg" width="125" lang="125">
+        <img src="IMG/62524158-alegre-joven-está-recibiendo-tratamiento-facial-por-esteticista-en-la-clínica-spa.jpg" width="125" lang="125">
+        <img src="IMG/beauty-salon-47.avif" width="125" lang="125">
+        <img src="IMG/DSC_0076+copiaB.jpg" width="125" lang="125" alt="">
+        <h2>Porque elegirnos</h2>
+       <ul>
+        <li>Profesionales Certificados</li>
+        <li>Ambiente Acogedor</li>
+        <li>Tratamientos Personalizados</li>
+
+       </ul>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form action="enviar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>
